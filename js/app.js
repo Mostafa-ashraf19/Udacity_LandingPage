@@ -81,7 +81,9 @@ window.scrollTo({
     behavior: 'smooth'
   })
 });
-
+document.addEventListener('mouseover',()=>{
+  Navbar.style.display = 'block';
+});
 window.onscroll = ()=>{
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         UPbutoon.style.display = "block";
